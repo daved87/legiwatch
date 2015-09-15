@@ -1,0 +1,39 @@
+
+function setUpAutoComplete() {
+	var states = [
+		'Alabama','Arkansas','Arizona','Arizona',
+		'California','Colorado','Connecticut','Delaware',
+		'Florida','Georgia','Hawaii','Idaho',
+		'Illinois','Indiana','Iowa','Kansas',
+		'Ketucky','Louisiana','Maine','Maryland',
+		'Massachusetts','Michigan','Minnesota','Mississippi',
+		'Missouri','Montana','Nebraska','Nevada',
+		'New Hampshire','New Jersey','New Mexico','New York',
+		'North Carolina','North Dakota','Ohio','Oklahoma',
+		'Oregon','Pennsylvania','Rhode Island','South Carolina',
+		'South Dakota','Tennessee','Texas','Utah',
+		'Vermont','Virginia','Washington','West Virginia',
+		'Wisconsin','Wyoming'
+	];
+
+	$('#state').autocomplete({
+		source: states,
+		select: function(event, ui) {
+			$('input[type="submit"]').prop('disabled', false);
+		},
+		change: function(event, ui) {
+			var val = this.value;
+			val = val.charAt(0).toUpperCase() + val.substr(1);
+
+			if ($.inArray (val, states ) > -1) {
+				$('#state').removeClass('error');
+				$('#state').addClass('valid');
+				$('input[type="submit"]').prop('disabled', false);
+			} else {
+				$('#state').removeClass('valid');
+				$('#state').addClass('error');
+				$('input[type="submit"]').prop('disabled', true);
+			}
+		}
+	});
+}

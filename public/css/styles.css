@@ -1,0 +1,407 @@
+
+
+body {
+	background: #369 url("images/bg_fade.png") top repeat-x;
+}
+
+a, img {
+	outline: 0;
+}
+
+@media screen and (max-width: 48em) {
+	.menuVertical {
+		display: none !important;
+	}
+
+	.pure-menu-item {
+		padding-left: 5px;
+	}
+
+	.pure-menu-selected a {
+		color: #FED !important;
+		background-color: #73B693;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;	
+	}
+
+	.pure-menu-link:hover {
+		background-color: #B7A557;
+		-webkit-border-radius: 5px;
+		-moz-border-radius: 5px;
+		border-radius: 5px;	
+	}	
+
+	.menuHeader {
+		margin: 0 auto !important;
+		text-align: center !important;
+	}
+
+	.mainArea {
+		margin-left: 0px;
+		padding-top: 25px;
+	}
+
+	/*Mini Login*/
+	.miniLoginExtension {
+		display: none;
+	}
+
+	.LoginExtension {
+	display: none;
+	}
+	/*Mini Login*/
+
+	#registerForm {
+		background-color: white;
+		width: 100%;
+		-webkit-border-radius: 0px;	
+		-moz-border-radius: 0px;	
+		border-radius: 0px;	
+	}	
+}
+
+@media screen and (min-width: 48em) {
+	.menuHorizontal {
+		display: none !important;
+	}
+
+	.pure-menu-link:hover {
+		background-color: #B7A557;
+	}
+
+	.pure-menu-selected a {
+		color: #FED !important;
+		background-color: #73B693;
+	}		
+
+	.mainArea {
+		margin-left: 246px;
+		padding-top: 25px;
+	}
+
+	/*Mini Login*/
+	.miniLoginExtension {
+		display: inline-block;
+		float: right;
+		text-align: center;
+	}
+	/*Mini Login*/
+
+	.LoginExtension {
+		display: inline-block;
+		text-align: center;
+	}
+
+	#registerForm {
+		max-width: 600px;
+	}
+
+	#profileForm {
+		max-width: 500px;
+	}
+}
+
+.defaultForm {
+	background-color: white;
+	margin: auto;
+	padding: 15px;
+	-webkit-border-radius: 2px;	
+	-moz-border-radius: 2px;	
+	border-radius: 2px;	
+}
+
+.welcomeName {
+	color: white;
+	padding-left: 15px;
+}
+
+.welcomeName a {
+	outline: 0;
+	color: white;
+	font-size: 16px;
+}
+
+.welcomeName a:hover {
+	font-weight: bold;
+	color: #B7A557;		
+}
+
+
+
+.navTab {
+	background-color: #213357;
+	min-width: 240px;
+}
+
+.logout {
+	font-size: 14px;
+    color: white;
+    padding-left: 15px;
+    text-decoration: none;
+    font-weight: bold;    	
+}
+
+.logout:hover {
+    color: #B7A557;
+
+}
+
+.navTab .loginButton {
+	background-color: white;
+	border-radius: 5px;
+	padding: 3px;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 13px;
+}
+
+.navTab .loginButton:hover {
+	background-color: #B7A557;
+}
+
+.menuHeader {
+	font-size: 28px;
+	cursor: pointer;
+	padding: .5em .5em;
+
+}
+
+.menuHeader a {
+	color: #FED;
+	text-decoration: none;
+}
+
+.largeMenu {
+	position: absolute;
+	height: 100%;
+}
+
+.menuItem {
+	font-size: 18px;
+}
+
+.menuItem a {
+	width: 100%;
+}
+
+.mainContent {
+	background-color: blue;
+}
+
+.section {
+	background-color: orange;
+}
+
+.upcomingBillsSection {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	border: 1px hidden #073252;
+	padding: 12px;
+	margin: 10px;
+	background-color: white;
+}
+
+#upcomingBillsDiv {
+	display: none;
+}
+
+.loadingGif {
+	display: none;
+	float: right;
+	padding-right: 20px;
+}
+
+#upcomingHeader {
+	padding-left: 5px;
+	padding-right: 5px;
+	margin: auto;
+}
+
+.expandContext {
+	display: none;
+}
+
+.upcomingBill {
+	margin: 5px 5px;
+	padding: 5px 5px;
+	text-decoration: none;
+}
+
+.outSourceLink {
+	float:left;
+	text-decoration: none;
+	color: black;
+}
+
+.outSourceLink:visited {
+	color: black;
+}
+
+.outSourceLink:hover {
+	color: #73B693;
+}
+
+.imgLink {
+	width: 20px;
+	height: 20px;
+}
+
+.upcomingContext {
+	display: none;
+	font-size: 12px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.upcomingBillLink {
+	float: right;
+	padding-right: 5px;
+	font-size: 10px;
+	text-decoration: underline;
+	color: black;
+}
+
+.imgTitle {
+	width: 45px;
+	height: 45px;
+	-webkit-border-radius: 5px;	
+	-moz-border-radius: 5px;	
+	border-radius: 5px;
+}
+
+.aboutTitle {
+	text-align: center;
+	font-size: 18pt;
+}
+
+.ui-widget-header {
+	background: #3B5997;
+}
+
+.pure-button-primary {
+	background-color: #3B5997;
+}
+
+
+/*Mini Login*/
+
+.loginContainer a {
+	font-size: 11px;
+}
+
+.miniLoginMain {
+	float: left;
+}
+
+.loginTitle {
+	width: 160px;
+	height: 160px;
+
+}
+/*Mini Login*/
+
+.loginContainerMain {
+	width: 600px;
+	margin: auto;
+	padding: 20px;
+}
+
+.loginContainerMain a {
+	font-size: 11px;
+    color: #222222;	
+}
+
+/*register form*/
+
+.emailCheckLoadingGif {
+	display: none;
+    float: left;
+    padding-left: 15px;
+    width: 25px;
+    padding-top: 8px;
+}
+
+.districtGetLoadingGif {
+	display: none;
+    float: left;
+    padding-left: 15px;
+    width: 25px;
+    padding-top: 8px;
+}
+
+
+#registerForm input.valid  {
+	background: transparent url("images/validCheck.gif") no-repeat scroll 99% 15%;
+}
+
+#registerForm input.error {
+	background: transparent url("images/invalidCheck.gif") no-repeat scroll 99% 15%;
+}
+
+.registerArea {
+	padding-top: 25px;
+}
+
+#registerForm label.error {
+	font-size: 12px;
+	color: #a94442;
+	float: left;
+    font-weight: bold;	
+}
+
+#registerForm .emailValid {
+	color: green;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 10px;
+    padding: 10px 0px 0px 5px;
+    float:left;
+}
+
+#zipChk {
+    padding: 10px 0px 0px 5px;
+}
+
+#emailChk {
+	padding-left: 5px;
+	padding-top: 10px;
+}
+
+#repsTable {
+	display: none;
+}
+
+#repsTable th#districtTitle {
+	text-align: center;
+	background-color: #3B5997;
+	color: #FED;
+}
+/*register form*/
+
+.zipCodeTable {
+	background-color: white;
+	margin: 0 auto;
+}
+
+.zipCodeTable th.zipCodeTableHeader {
+	text-align: center;
+	background-color: #3B5997;
+	color: #FED;
+}
+
+.zipCodeTable .imgLink {
+	cursor: pointer;
+}
+
+#dialogZip img.LoadingGif {
+    display: none;
+    width: 25px;
+    padding-left: 6px;
+    padding-top: 8px;
+}
+
+.accordianOverride {
+	height: auto !important;
+}
